@@ -16,7 +16,6 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
-  // Labels
   static TextStyle labelGold = GoogleFonts.inter(
     color: AppColors.textGold,
     fontSize: 16,
@@ -29,7 +28,6 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
-  // Body Text
   static TextStyle bodyText = GoogleFonts.inter(
     color: AppColors.textWhite,
     fontSize: 14,

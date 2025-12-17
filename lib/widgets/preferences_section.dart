@@ -3,7 +3,7 @@ import '../constants/colors.dart';
 import '../constants/text_styles.dart';
 
 class PreferencesSection extends StatefulWidget {
-  const PreferencesSection({Key? key}) : super(key: key);
+  const PreferencesSection({super.key});
 
   @override
   State<PreferencesSection> createState() => _PreferencesSectionState();

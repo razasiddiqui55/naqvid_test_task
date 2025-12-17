@@ -8,6 +8,7 @@ import '../widgets/interests_section.dart';
 import '../widgets/security_section.dart';
 import '../widgets/data_backup_section.dart';
 import '../widgets/preferences_section.dart';
+import 'challenge_friend_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -42,7 +43,7 @@ class SettingsScreen extends StatelessWidget {
                 const SizedBox(height: 14),
                 const PreferencesSection(),
                 const SizedBox(height: 24),
-                _buildChallengeButton(),
+                _buildChallengeButton(context),
                 const SizedBox(height: 10),
               ],
             ),
@@ -70,11 +71,16 @@ class SettingsScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildChallengeButton() {
+  Widget _buildChallengeButton(ctx) {
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            ctx,
+            MaterialPageRoute(builder: (context) => const ChallengeFriendScreen()),
+          );
+        },
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.textGold,
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
