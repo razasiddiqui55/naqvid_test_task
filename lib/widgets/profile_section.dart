@@ -103,7 +103,7 @@ class ProfileSection extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 10),
           _buildButton('Save Changes'),
         ],
       ),
